@@ -1,191 +1,1054 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
     <!-- hedder section -->
-        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span>
-                </a>
-                <div class="flex items-center lg:order-2">
-                    <div class="hidden mt-2 mr-4 sm:inline-block">
-                        <span></span>
-                    </div>
-        
-                    <a href="https://themesberg.com/product/tailwind-css/landing-page"
-                        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
-                    <button data-collapse-toggle="mobile-menu-2" type="button"
-                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="mobile-menu-2" aria-expanded="true">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
                 </div>
-                <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
-                    </ul>
+
+                <a href="https://themesberg.com/product/tailwind-css/landing-page"
+                    class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="true">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hedder section -->
+
+    <!--content start-->
+    <!--carosel-->
+    <div x-data="heroSlider()" class="elative overflow-hidden" @mouseenter="autoplay = false"
+        @mouseleave="autoplay = true">
+        <div class="relative h-[80vh] min-h-[500px]">
+            <template x-for="(slide, index) in slides" :key="index">
+                <div x-show="currentSlide === index" x-transition.opacity.duration.800ms class="absolute inset-0">
+                    <div class="absolute inset-0 bg-gray-800">
+                        <img :src="slide.image" :alt="slide.title" class="w-full h-full object-cover opacity-80"
+                            @error="replaceBrokenImage($event)" loading="lazy">
+                    </div>
+
+                    <div class="container mx-auto px-6 h-full flex items-center">
+                        <div class="max-w-2xl text-white slide-content" :class="{
+                                    'translate-x-0 opacity-100': currentSlide === index,
+                                    'translate-x-10 opacity-0': currentSlide !== index
+                                }">
+                            <h2 x-text="slide.title" class="text-4xl md:text-5xl font-bold mb-4"></h2>
+                            <p x-text="slide.description" class="text-xl md:text-2xl mb-8"></p>
+                            <a :href="slide.buttonUrl"
+                                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors fade-in"
+                                x-text="slide.buttonText"></a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <button @click="prev()"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-10 transition-all"
+                aria-label="Previous slide">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button @click="next()"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-10 transition-all"
+                aria-label="Next slide">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+                <template x-for="(slide, index) in slides" :key="index">
+                    <button @click="goTo(index)" class="w-2 h-2 md:w-3 md:h-3 rounded-full transition-all" :class="{
+                                'bg-white w-4 md:w-6': currentSlide === index,
+                                'bg-white/50': currentSlide !== index
+                            }" :aria-label="`Go to slide ${index + 1}`"></button>
+                </template>
+            </div>
+        </div>
+    </div>
+     <!--carosel-->
+
+    <!--Top Cards System-->
+    <div class="flex flex-wrap gap-6 justify-center mt-8 pb-6 ">
+        <!-- Green Border Card -->
+        <div class="border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64">
+            <i class="fa fa-3x fa-graduation-cap  mb-4"></i>
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Skilled Instructors</h3>
+            <p class="text-gray-600">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+
+        <!-- Blue Gradient Card -->
+        <div class="border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64">
+            <i class="fa fa-3x fa-globe  mb-4 iconredi"></i>
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Online Classes</h3>
+            <p class="text-gray-600">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+
+        <!-- Blue Gradient Card -->
+        <div class="border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64">
+            <i class="fa fa-3x fa-home  mb-4 iconredi"></i>
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Home Projects</h3>
+            <p class="text-gray-600">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+
+        <!-- Gray Text Card -->
+        <div class="border-4 border-[#00FF00] bg-white p-6 rounded-lg shadow-md w-64">
+            <i class="fa fa-3x fa-book-open  mb-4 iconredi"></i>
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Book Library</h3>
+            <p class="text-gray-600">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+    </div>
+    <!--Top Cards System-->
+
+    <!--Books index html-->
+    <div class="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Book Products</h1>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div
+                    class="group relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                            alt="Smart Watch"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button
+                                class="bg-white/90 text-gray-800 p-2 rounded-full shadow-md transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-red-500 hover:text-white">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse-slow">NEW</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">Premium Smart Watch</h3>
+                                <p class="text-gray-500 text-sm">Fitness Tracker, Heart Rate Monitor</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-lg font-bold text-indigo-600">$199.99</p>
+                                <p class="text-xs text-gray-400 line-through">$249.99</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs ml-2">(142 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 2 -->
+                <div
+                    class="group relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                            alt="Wireless Headphones"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button
+                                class="bg-white/90 text-gray-800 p-2 rounded-full shadow-md transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-red-500 hover:text-white">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">Noise Cancelling Headphones</h3>
+                                <p class="text-gray-500 text-sm">Bluetooth 5.0, 30hr Battery</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-lg font-bold text-indigo-600">$179.99</p>
+                                <p class="text-xs text-gray-400 line-through">$219.99</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs ml-2">(89 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 3 -->
+                <div
+                    class="group relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1068&q=80"
+                            alt="DSLR Camera"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button
+                                class="bg-white/90 text-gray-800 p-2 rounded-full shadow-md transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-red-500 hover:text-white">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">SALE</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">Professional DSLR Camera</h3>
+                                <p class="text-gray-500 text-sm">24.2MP, 4K Video, Wi-Fi</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-lg font-bold text-indigo-600">$899.99</p>
+                                <p class="text-xs text-gray-400 line-through">$1,199.99</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs ml-2">(256 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 4 - 3D Flip Card -->
+                <div
+                    class="group relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1068&q=80"
+                            alt="DSLR Camera"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button
+                                class="bg-white/90 text-gray-800 p-2 rounded-full shadow-md transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 hover:bg-red-500 hover:text-white">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-4 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <button
+                                class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">SALE</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">Professional DSLR Camera</h3>
+                                <p class="text-gray-500 text-sm">24.2MP, 4K Video, Wi-Fi</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-lg font-bold text-indigo-600">$899.99</p>
+                                <p class="text-xs text-gray-400 line-through">$1,199.99</p>
+                            </div>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs ml-2">(256 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--Books index html-->
+
+    <!--video index html-->
+    <div class="bg-[#0f0f0f] text-white font-sans flex flex-col min-h-screen">
+        <!-- Side Menu -->
+        <aside id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-[#1c1c1c] z-50 p-6 transform -translate-x-full transition-transform duration-300 md:hidden">
+            <button id="close-btn" class="text-white text-2xl mb-6">&times;</button>
+            <nav class="space-y-4 text-lg">
+            <a href="#" class="block text-white hover:text-green-500">Home</a>
+            <a href="#" class="block text-white hover:text-green-500">Trending</a>
+            <a href="#" class="block text-white hover:text-green-500">Genres</a>
+            <a href="#" class="block text-white hover:text-green-500">Movies</a>
+            <a href="#" class="block text-white hover:text-green-500">Login</a>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <main class="flex-grow max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Video Player + Controls -->
+            <section class="md:col-span-2 space-y-4">
+
+            <div class="w-full aspect-video bg-black rounded overflow-hidden shadow-lg">
+                <video
+                id="video-player"
+                class="w-full h-full bg-black"
+                controls
+                preload="metadata"
+                poster="https://cdn.myanimelist.net/images/anime/10/47347.jpg"
+                >
+                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="flex justify-between items-center text-gray-400 text-sm font-semibold">
+                <button id="prev-ep" class="px-3 py-1 rounded bg-green-700 hover:bg-green-800 disabled:opacity-50" disabled>Previous Episode</button>
+                <span id="episode-info" class="text-green-400">Episode 1 - Attack on Titan</span>
+                <button id="next-ep" class="px-3 py-1 rounded bg-green-700 hover:bg-green-800">Next Episode</button>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed">
+                Eren lives in a world where enormous walls protect humanity from man-eating giants known as Titans. But when a colossal Titan breaks the wall, everything changes.
+            </p>
+
+            <!-- Episode List -->
+            <div class="overflow-x-auto scrollbar-thin">
+                <ul id="episode-list" class="flex space-x-4 py-2 text-sm text-gray-400">
+                <!-- Episodes inserted by JS -->
+                </ul>
+            </div>
+            </section>
+
+            <!-- Sidebar: Trending Anime -->
+            <aside>
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-green-500 pl-3">Trending Anime</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
+
+                <div class="relative group bg-[#1c1c1c] rounded overflow-hidden shadow hover:shadow-lg transition cursor-pointer" onclick="loadAnime('Attack on Titan', 1, 'https://cdn.myanimelist.net/images/anime/10/47347.jpg', 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', 'Eren lives in a world where enormous walls protect humanity from man-eating giants known as Titans. But when a colossal Titan breaks the wall, everything changes.')">
+                <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <div class="p-2">
+                    <h3 class="text-sm font-semibold truncate">Attack on Titan</h3>
+                    <p class="text-xs text-gray-400">24 eps • Action, Drama</p>
+                </div>
+                <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Ep 24</span>
+                </div>
+
+                <div class="relative group bg-[#1c1c1c] rounded overflow-hidden shadow hover:shadow-lg transition cursor-pointer" onclick="loadAnime('My Hero Academia', 1, 'https://cdn.myanimelist.net/images/anime/5/87048.jpg', 'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', 'A story about heroes with superpowers in a modern world.')">
+                <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="My Hero Academia" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <div class="p-2">
+                    <h3 class="text-sm font-semibold truncate">My Hero Academia</h3>
+                    <p class="text-xs text-gray-400">13 eps • Super Power</p>
+                </div>
+                <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Ep 13</span>
+                </div>
+
+                <div class="relative group bg-[#1c1c1c] rounded overflow-hidden shadow hover:shadow-lg transition cursor-pointer" onclick="loadAnime('Death Note', 1, 'https://cdn.myanimelist.net/images/anime/4/19644.jpg', 'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4', 'A high schooler finds a notebook that can kill anyone whose name is written in it.')">
+                <img src="https://cdn.myanimelist.net/images/anime/4/19644.jpg" alt="Death Note" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <div class="p-2">
+                    <h3 class="text-sm font-semibold truncate">Death Note</h3>
+                    <p class="text-xs text-gray-400">37 eps • Thriller, Supernatural</p>
+                </div>
+                <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Ep 37</span>
+                </div>
+
+            </div>
+            </aside>
+        </main>
+    </div>
+
+    <!--Students review html-->
+    <div class="bg-gray-50 min-h-screen flex items-center justify-center p-4 mb-5">
+        <div class="max-w-7xl w-full mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Students Reviews</h2>
+            <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Hear what our customers say about their experience with our products and services.</p>
+        </div>
+
+        <div class="relative">
+            <!-- Navigation Arrows -->
+            <button id="prev" class="nav-button absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-8 z-10 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white">
+                <i class="fas fa-chevron-left text-xl"></i>
+            </button>
+            <button id="next" class="nav-button absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
+
+            <!-- Carousel Container -->
+            <div id="carousel" class="overflow-hidden relative">
+                <div id="testimonial-track" class="flex transition-transform duration-500 ease-in-out">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                        <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="flex space-x-1 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">"The service was exceptional from start to finish. The team went above and beyond to deliver exactly what we needed."</p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" 
+                                     alt="Sarah Johnson" 
+                                     class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                    <p class="text-gray-500 text-sm">Marketing Director, TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                        <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="flex space-x-1 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">"We've seen a 40% increase in productivity since implementing their solution. The onboarding process was seamless."</p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" 
+                                     alt="Michael Chen" 
+                                     class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                                    <p class="text-gray-500 text-sm">CTO, InnovateSoft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                        <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="flex space-x-1 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">"Their attention to detail and customer support is unmatched. We've partnered with them for all our digital needs."</p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" 
+                                     alt="Emma Rodriguez" 
+                                     class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Emma Rodriguez</h4>
+                                    <p class="text-gray-500 text-sm">CEO, DesignHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4 animate-fade">
+                        <div class="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="flex space-x-1 text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">"The ROI was evident within the first quarter. Their platform has become indispensable to our operations."</p>
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" 
+                                     alt="David Wilson" 
+                                     class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-indigo-100">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">David Wilson</h4>
+                                    <p class="text-gray-500 text-sm">Operations Manager, GlobalLogix</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    <!--content start-->
-        <h1>hello</h1>
-        <p>Both solutions ensure the footer stays at the bottom regardless of content height
 
-            Choose whichever solution fits your project better. The Flexbox solution is more widely supported, while the Grid solution is more modern and concise.
-            
-            If you have content between the header and footer, make sure to place it in the <main> element so it can grow and push the footer down when needed.
-            
-            align to bottom
-            To align your footer to the bottom of the page (sticky footer), you can use Flexbox or CSS Grid. Here's how to implement both solutions:
-        </p>
-        <p>
-                    Both solutions ensure the footer stays at the bottom regardless of content height
+            <!-- Indicators -->
+            <div class="flex justify-center mt-12 space-x-3">
+                <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 active-dot"></button>
+                <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button class="indicator-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300"></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Students review html-->
 
-Choose whichever solution fits your project better. The Flexbox solution is more widely supported, while the Grid solution is more modern and concise.
-
-If you have content between the header and footer, make sure to place it in the <main> element so it can grow and push the footer down when needed.
-
-align to bottom
-To align your footer to the bottom of the page (sticky footer), you can use Flexbox or CSS Grid. Here's how to implement both solutions:
-        </p>
-        <p>Both solutions ensure the footer stays at the bottom regardless of content height
-
-                    Choose whichever solution fits your project better. The Flexbox solution is more widely supported, while the Grid solution is more modern and concise.
-                    
-                    If you have content between the header and footer, make sure to place it in the <main> element so it can grow and push the footer down when needed.
-                    
-                    align to bottom
-            To align your footer to the bottom of the page (sticky footer), you can use Flexbox or CSS Grid. Here's how to implement both solutions:
-        </p>
-         <!--content end-->
-        <!-- footer section -->
-        <footer class="bg-gray-900 text-white pt-12 pb-8">
-            <div class="container mx-auto px-4">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <!--content end-->
+    <!-- footer section -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- Company Info -->
                 <div class="space-y-4">
-                  <div class="flex items-center">
-                    <svg class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    <span class="ml-2 text-xl font-bold">Company</span>
-                  </div>
-                  <p class="text-gray-400">Building innovative solutions for the modern world.</p>
-                  <div class="flex space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                      <span class="sr-only">Facebook</span>
-                      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                      <span class="sr-only">Twitter</span>
-                      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                      <span class="sr-only">Instagram</span>
-                      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                      <span class="sr-only">LinkedIn</span>
-                      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">Company</span>
+                    </div>
+                    <p class="text-gray-400">Building innovative solutions for the modern world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-          
+
                 <!-- Quick Links -->
                 <div class="space-y-4">
-                  <h3 class="text-lg font-semibold">Quick Links</h3>
-                  <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Pricing</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
-                  </ul>
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
                 </div>
-          
+
                 <!-- Services -->
                 <div class="space-y-4">
-                  <h3 class="text-lg font-semibold">Services</h3>
-                  <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Web Development</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Digital Marketing</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
-                  </ul>
+                    <h3 class="text-lg font-semibold">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Digital Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+                    </ul>
                 </div>
-          
+
                 <!-- Contact -->
                 <div class="space-y-4">
-                  <h3 class="text-lg font-semibold">Contact Us</h3>
-                  <address class="not-italic text-gray-400">
-                    <p>123 Business Ave</p>
-                    <p>San Francisco, CA 94107</p>
-                    <p class="mt-2">Email: <a href="mailto:info@company.com" class="hover:text-white transition">info@company.com</a></p>
-                    <p>Phone: <a href="tel:+11234567890" class="hover:text-white transition">+1 (123) 456-7890</a></p>
-                  </address>
+                    <h3 class="text-lg font-semibold">Contact Us</h3>
+                    <address class="not-italic text-gray-400">
+                        <p>123 Business Ave</p>
+                        <p>San Francisco, CA 94107</p>
+                        <p class="mt-2">Email: <a href="mailto:info@company.com"
+                                class="hover:text-white transition">info@company.com</a></p>
+                        <p>Phone: <a href="tel:+11234567890" class="hover:text-white transition">+1 (123) 456-7890</a>
+                        </p>
+                    </address>
                 </div>
-              </div>
-          
-              <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Company. All rights reserved.</p>
                 <div class="flex space-x-6">
-                  <a href="#" class="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
-                  <a href="#" class="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
-                  <a href="#" class="text-gray-500 hover:text-white text-sm transition">Cookies</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition">Cookies</a>
                 </div>
-              </div>
             </div>
-          </footer>
-        
-        <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <!--carosel script-->
+    <script>
+        function heroSlider() {
+            return {
+                currentSlide: 0,
+                autoplay: true,
+                interval: null,
+                slides: [
+                    {
+                        title: "KOREAN LANGUAGE",
+                        buttonText: "Class Shedules",
+                        buttonUrl: "#",
+                        image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+                    },
+                    {
+                        title: "WATCH VIDEO",
+                        buttonText: "More Videos",
+                        buttonUrl: "#",
+                        image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+                    },
+                    {
+                        title: "BUY BOOKS",
+                        buttonText: "More Books",
+                        buttonUrl: "#",
+                        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+                    }
+                ],
+                init() {
+                    this.startAutoplay();
+                },
+                next() {
+                    this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+                },
+                prev() {
+                    this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+                },
+                goTo(index) {
+                    this.currentSlide = index;
+                },
+                startAutoplay() {
+                    this.interval = setInterval(() => {
+                        if (this.autoplay) {
+                            this.next();
+                        }
+                    }, 5000);
+                },
+                replaceBrokenImage(event) {
+                    // Fallback obrázky z iného zdroja
+                    const fallbacks = [
+                        'https://picsum.photos/id/1018/1920/1080',
+                        'https://picsum.photos/id/1015/1920/1080',
+                        'https://picsum.photos/id/1019/1920/1080'
+                    ];
+                    event.target.src = fallbacks[this.currentSlide % fallbacks.length];
+                }
+            }
+        }
+    </script>
+
+    <!-- books index cards js-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- books index cards js-->
+
+    <!--students review js-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('testimonial-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.getElementById('prev');
+            const nextBtn = document.getElementById('next');
+            const dots = document.querySelectorAll('.indicator-dot');
+            
+            let currentIndex = 0;
+            const cardWidth = cards[0].offsetWidth;
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const totalCards = cards.length;
+            let autoSlideInterval;
+
+            // Initialize carousel
+            function updateCarousel() {
+                const offset = -currentIndex * cardWidth;
+                track.style.transform = `translateX(${offset}px)`;
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active-dot', index === currentIndex);
+                });
+                
+                // Animate cards
+                cards.forEach(card => {
+                    card.classList.remove('animate-fade');
+                    void card.offsetWidth; // Trigger reflow
+                    card.classList.add('animate-fade');
+                });
+            }
+
+            // Next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % (totalCards - visibleCards + 1);
+                updateCarousel();
+            }
+
+            // Previous slide
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + (totalCards - visibleCards + 1)) % (totalCards - visibleCards + 1);
+                updateCarousel();
+            }
+
+            // Auto slide
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                    resetAutoSlide();
+                });
+            });
+
+            // Reset auto slide timer
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+
+            // Pause on hover
+            const carousel = document.getElementById('carousel');
+            carousel.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            carousel.addEventListener('mouseleave', startAutoSlide);
+
+            // Responsive adjustments
+            window.addEventListener('resize', () => {
+                const newVisibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+                if (newVisibleCards !== visibleCards) {
+                    currentIndex = 0;
+                    updateCarousel();
+                }
+            });
+
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+        });
+    </script>
+    <!--students review js-->
+
+    <!--videos index js-->
+    <script>
+            // Sidebar toggle
+            document.getElementById("menu-btn").onclick = () => {
+            document.getElementById("side-menu").classList.remove("-translate-x-full");
+            };
+            document.getElementById("close-btn").onclick = () => {
+            document.getElementById("side-menu").classList.add("-translate-x-full");
+            };
+
+            // Episode data: simulate 10 episodes with dummy video URLs (same video for demo)
+            const episodes = Array.from({ length: 10 }, (_, i) => ({
+            number: i + 1,
+            title: `Episode ${i + 1}`,
+            videoUrl: [
+                "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+                "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+            ][i % 3], // cycling demo videos
+            }));
+
+            let currentEpisodeIndex = 0;
+            const videoPlayer = document.getElementById('video-player');
+            const episodeInfo = document.getElementById('episode-info');
+            const episodeListEl = document.getElementById('episode-list');
+            const prevBtn = document.getElementById('prev-ep');
+            const nextBtn = document.getElementById('next-ep');
+
+            // Render episode list
+            function renderEpisodeList() {
+            episodeListEl.innerHTML = episodes.map((ep, i) => `
+                <li>
+                <button
+                    class="px-3 py-1 rounded hover:bg-green-600 focus:outline-none ${
+                    i === currentEpisodeIndex ? 'bg-green-600 text-white font-bold' : 'bg-[#1c1c1c] text-gray-400'
+                    }"
+                    data-episode="${i}"
+                >${ep.title}</button>
+                </li>
+            `).join('');
+            }
+
+            // Load episode
+            function loadEpisode(index) {
+            if (index < 0 || index >= episodes.length) return;
+            currentEpisodeIndex = index;
+            const ep = episodes[index];
+            videoPlayer.src = ep.videoUrl;
+            episodeInfo.textContent = `${ep.title} - ${document.querySelector('h1').textContent}`;
+            videoPlayer.play();
+            updateControls();
+            renderEpisodeList();
+            }
+
+            // Update Prev/Next button state
+            function updateControls() {
+            prevBtn.disabled = currentEpisodeIndex === 0;
+            nextBtn.disabled = currentEpisodeIndex === episodes.length -1;
+            }
+
+            // Episode list click
+            episodeListEl.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const epIndex = Number(e.target.dataset.episode);
+                loadEpisode(epIndex);
+            }
+            });
+
+            // Prev/Next buttons
+            prevBtn.onclick = () => {
+            if (currentEpisodeIndex > 0) loadEpisode(currentEpisodeIndex - 1);
+            };
+            nextBtn.onclick = () => {
+            if (currentEpisodeIndex < episodes.length -1) loadEpisode(currentEpisodeIndex + 1);
+            };
+
+            // Load first episode on page load
+            loadEpisode(0);
+
+            // Load anime from trending list on sidebar click
+            function loadAnime(title, epNum, poster, videoUrl, description) {
+            document.querySelector('h1').textContent = title;
+            episodeInfo.textContent = `Episode ${epNum} - ${title}`;
+            videoPlayer.src = videoUrl;
+            videoPlayer.poster = poster;
+            videoPlayer.play();
+            document.querySelector('section p').textContent = description;
+
+            // Reset episodes to dummy 10 episodes with same video (can be customized)
+            for(let i=0; i<episodes.length;i++){
+            };
+            }
+    </script>
+    <!--videos index js-->
+
+    <!--header css-->
+    <style type="text/tailwindcss">
+        .hero-slide {
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .slide-content {
+            transition: all 0.6s ease 0.3s;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <!--header css-->
+
+    <!-- books index cards css-->
+    <style type="text/tailwindcss">
+        @layer utilities {
+                .perspective-1000 {
+                    perspective: 1000px;
+                }
+                .transform-style-preserve-3d {
+                    transform-style: preserve-3d;
+                }
+                .backface-hidden {
+                    backface-visibility: hidden;
+                }
+            }
+    </style>
+    <!-- books index cards css-->
+
+    <!--students review css-->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0.4; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .testimonial-card {
+            transition: all 0.5s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .active-dot {
+            transform: scale(1.4);
+            background-color: #4F46E5;
+        }
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #4F46E5;
+            color: white;
+        }
+    </style>
+    <!--students review css-->
+
+    <!--videos index css-->
+    <style>
+        /* Custom scrollbar for episode list */
+        .scrollbar-thin::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: #7c3aed; /* green */
+        border-radius: 3px;
+        }
+    </style>
+    <!--videos index css-->
+    
+
 </body>
+
 </html>
